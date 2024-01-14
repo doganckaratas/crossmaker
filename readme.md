@@ -52,6 +52,16 @@ I've added simple help text but if you ask me, I think it is not helpful at all,
 $ ./manage.sh help
 ```
 
+## Generating the toolchain
+
+After `running` the container with `./manage.sh run`, you can use `./build-toolchain.sh` command for the automated build of the toolchain.
+
+You can alter my default settings in `./build-toolchain.sh` for your needs, e.g. I've picked job count to `7` and you can change it to `3` for example.
+
+```sh
+# ./build-toolchain.sh
+```
+
 ## System requirements
 
 I think all Docker supported linux distros are suitable, but scripts are based on `bash` / `dash` shell, so if you are using other shells something might be screwed.

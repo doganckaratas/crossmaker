@@ -12,6 +12,8 @@ All commands can be triggered with `./manage.sh` script. Before using it, please
 $ source manage.sh
 ```
 
+With this way, you can use `tab` key for autocomplete target arguments.
+
 If you do not have Docker installed on your system, please use `./manage.sh` script for auto installing Docker with below command:
 
 ```sh
@@ -37,6 +39,18 @@ $ ./manage.sh run
 ```
 
 That's it, you can close session with `exit` or `CTRL-D` keys.
+
+If you no longer need container, you can send it to hell with the following command:
+
+```sh
+$ ./manage.sh destroy
+```
+
+I've added simple help text but if you ask me, I think it is not helpful at all, although you can acces it with wrong arguments supplied or the following command:
+
+```sh
+$ ./manage.sh help
+```
 
 ## System requirements
 
